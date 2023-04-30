@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/css/bootstrap.min.css">
+  <title>AssoCartes</title>
+</head>
+<body>
+  
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Association de tournoi de cartes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">À propos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="tournoiDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tournoi
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="tournoiDropdown">
+                <li><a class="dropdown-item" href="regles_tarifs.html">Les règles</a></li>
+                <li><a class="dropdown-item" href="regles_tarifs.html">Les tarifs</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image1.jpg" class="d-block w-100" alt="Image 1">
+          <div class="carousel-caption">
+            <h3>Titre de l'image 1</h3>
+            <p>Description de l'image 1.</p>
+            <a href="#" class="btn btn-primary">En savoir plus</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="image2.jpg" class="d-block w-100" alt="Image 2">
+          <div class="carousel-caption">
+            <h3>Titre de l'image 2</h3>
+            <p>Description de l'image 2.</p>
+            <a href="#" class="btn btn-primary">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+
+    <div class="container mt-4">
+  
+      <h2 class="mt-4">Ils nous font confiance</h2>
+  
+      <div class="row mt-2">
+        <div class="col-md-3">
+          <img src="sponsor1.jpg" alt="Sponsor 1" class="img-fluid">
+        </div>
+        <div class="col-md-3">
+          <img src="sponsor2.jpg" alt="Sponsor 2" class="img-fluid">
+        </div>
+        <div class="col-md-3">
+          <img src="sponsor3.jpg" alt="Sponsor 3" class="img-fluid">
+        </div>
+        <div class="col-md-3">
+          <img src="sponsor4.jpg" alt="Sponsor 4" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Formulaire de contact -->
+<section id="contact">
+  <div class="container">
+    <h2>Contactez-nous</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Nom</label>
+        <input type="text" id="name" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" class="form-control" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; 2023 Association de Tournoi de Carte. Tous droits réservés.</p>
+    <ul class="footer-links">
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">À propos</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Tournoi</a></li>
+      <li><a href="#">Règles</a></li>
+      <li><a href="#">Tarifs</a></li>
+    </ul>
+  </div>
+</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
